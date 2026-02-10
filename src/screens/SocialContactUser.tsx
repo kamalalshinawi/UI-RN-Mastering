@@ -4,6 +4,7 @@ import UserAvatar from "../components/UserAvatar";
 import BackButton from "../components/BackButton";
 import { s,verticalScale } from "react-native-size-matters";
 import SocialSection from "../components/SocialSection";
+import {FontAwesome,Entypo,FontAwesome6} from "@expo/vector-icons"
 
 const SocialContactUser = () => {
   return (
@@ -15,11 +16,11 @@ const SocialContactUser = () => {
       <Text style={styles.ContactText}>Contact Us</Text>
       <View style={styles.Socialcontainer} >
         <Text style={styles.textSocial}>Social Media Platforms </Text>
-        <SocialSection title={"Whatsapp"} />
-        <SocialSection title={"Twitter"} />
-        <SocialSection title={"instagram"} />
-        <SocialSection title={"Snap Chat"} />
-        <SocialSection title={"Tiktok"} />
+        <SocialSection title={"Whatsapp"} icon={<FontAwesome name="whatsapp" size={24} color="#178AD9" />} />
+        <SocialSection title={"Twitter"} icon={<Entypo name="twitter" size={24} color="#178AD9" />} />
+        <SocialSection title={"instagram"} icon={<FontAwesome name="instagram" size={24} color="#178AD9" />} />
+        <SocialSection title={"Snap Chat"} icon={<FontAwesome name="snapchat-ghost" size={24} color="#178AD9" />} />
+        <SocialSection title={"Tiktok"} icon={<FontAwesome6 name="tiktok" size={24} color="#178AD9" />}  />
       </View>
       
     </View>
