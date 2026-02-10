@@ -4,7 +4,7 @@ import UserAvatar from '../components/UserAvatar'
 
 const SocialContactUser = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <UserAvatar />
     </View>
   )
@@ -12,4 +12,8 @@ const SocialContactUser = () => {
 
 export default SocialContactUser
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container:{
+        flex:1
+    }
+})

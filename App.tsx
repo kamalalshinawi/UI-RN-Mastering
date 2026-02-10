@@ -2,14 +2,16 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import IntroScreen from "./src/screens/IntroScreen";
 import SocialContactUser from "./src/screens/SocialContactUser";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
   return (
-    
-    <View style={styles.container}>
-      {/* <IntroScreen /> */}
-      < SocialContactUser />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View>
+        {/* <IntroScreen /> */}
+        <SocialContactUser />
+      </View>
+    </SafeAreaView>
   );
 }
 
