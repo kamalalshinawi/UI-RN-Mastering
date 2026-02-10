@@ -7,10 +7,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <View>
+      
         {/* <IntroScreen /> */}
         <SocialContactUser />
-      </View>
+      
     </SafeAreaView>
   );
 }
