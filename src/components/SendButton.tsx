@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import {s,vs} from "react-native-size-matters"
 import React from 'react'
 import { SentIcon } from '../assets/SentIcon'
 
 const SendButton = () => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <SentIcon />
-    </View>
+    </TouchableOpacity>
   )
 }
 
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#1077AF",
         height: vs(46),
         width: s(46),
-        borderRadius: s(40),
+        borderRadius: s(35),
         alignItems: "center",
         justifyContent: "center",
 

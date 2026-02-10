@@ -3,8 +3,7 @@ import React from "react";
 import UserAvatar from "../components/UserAvatar";
 import BackButton from "../components/BackButton";
 import { verticalScale } from "react-native-size-matters";
-import SendButton from "../components/SendButton";
-import SocialButton from "../components/SocialButton"
+import SocialSection from "../components/SocialSection";
 
 const SocialContactUser = () => {
   return (
@@ -13,8 +12,7 @@ const SocialContactUser = () => {
         <BackButton />
         <UserAvatar />
       </View>
-      <SendButton />
-      <SocialButton />
+      <SocialSection />
     </View>
   );
 };
