@@ -4,12 +4,20 @@ import FoodLogo from '../assets/FoodLogo'
 
 export default function IntroScreen() {
   return (
-    <View>
+    <View  style={styles.container}>
       {/* <Image source={require("../assets/Logo.png")} /> */}
       <FoodLogo />
     </View>
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container:{
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+    
+})
 
