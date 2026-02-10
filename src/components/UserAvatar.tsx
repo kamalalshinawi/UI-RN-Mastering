@@ -1,5 +1,6 @@
 import { StyleSheet,Image} from 'react-native'
 import React from 'react'
+import {s} from 'react-native-size-matters'
 
 const UserAvatar = () => {
   return (
@@ -14,8 +15,8 @@ export default UserAvatar
 
 const styles = StyleSheet.create({
     UserAvatar:{
-        height:32,
-        width:32,
-        borderRadius:16,
+        height:s(32),
+        width:s(32),
+        borderRadius:s(16),
     }
 })
