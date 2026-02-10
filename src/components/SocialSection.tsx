@@ -4,11 +4,11 @@ import SendButton from './SendButton'
 import React from 'react'
 import {s,vs} from "react-native-size-matters"
 
-const SocialSection = () => {
+const SocialSection = ({title}) => {
   return (
     <View style={styles.container}>
       <SocialButton />
-      <Text style={styles.text}>What's app</Text>
+      <Text style={styles.text}>{title}</Text>
       <SendButton />
     </View>
   )

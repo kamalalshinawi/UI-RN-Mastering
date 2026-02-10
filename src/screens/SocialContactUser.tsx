@@ -15,11 +15,11 @@ const SocialContactUser = () => {
       <Text style={styles.ContactText}>Contact Us</Text>
       <View style={styles.Socialcontainer} >
         <Text style={styles.textSocial}>Social Media Platforms </Text>
-        <SocialSection />
-        <SocialSection />
-        <SocialSection />
-        <SocialSection />
-        <SocialSection />
+        <SocialSection title={"Whatsapp"} />
+        <SocialSection title={"Twitter"} />
+        <SocialSection title={"instagram"} />
+        <SocialSection title={"Snap Chat"} />
+        <SocialSection title={"Tiktok"} />
       </View>
       
     </View>
