@@ -1,13 +1,14 @@
 import * as React from "react";
-import Svg, { Rect, Defs, Pattern, Use, Image, SvgProps } from "react-native-svg";
-const SunImage = (props:SvgProps) => (
-  <Svg
-    width={197}
-    height={200}
-    viewBox="0 0 197 200"
-    fill="none"
-    {...props}
-  >
+import Svg, {
+  Rect,
+  Defs,
+  Pattern,
+  Use,
+  Image,
+  SvgProps,
+} from "react-native-svg";
+const SunImage = (props: SvgProps) => (
+  <Svg width={197} height={200} viewBox="0 0 197 200" fill="none" {...props}>
     <Rect width={197} height={200} fill="url(#pattern0_1_23)" />
     <Defs>
       <Pattern
