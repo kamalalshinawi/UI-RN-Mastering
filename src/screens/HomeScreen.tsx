@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         fontWeight: "semibold",
         color: "#1D150F",
         fontSize: s(20),
-        marginBottom: vs(15),
+        marginBottom: vs(10),
     },
     loremtext:{
         fontSize: s(14),
