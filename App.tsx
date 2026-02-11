@@ -3,13 +3,15 @@ import { StyleSheet, Text, View } from "react-native";
 import IntroScreen from "./src/screens/IntroScreen";
 import SocialContactUser from "./src/screens/SocialContactUser";
 import { SafeAreaView } from "react-native-safe-area-context";
+import HomeScreen from "./src/screens/HomeScreen"
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       
         {/* <IntroScreen /> */}
-        <SocialContactUser />
+        {/* <SocialContactUser /> */}
+        <HomeScreen />
       
     </SafeAreaView>
   );
