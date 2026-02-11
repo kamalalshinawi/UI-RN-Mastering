@@ -1,12 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import {s,vs} from "react-native-size-matters"
+import TopTap from "../components/TopTap"
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Meditations</Text>
       <Text style={styles.loremtext}>Lorem Ipsum is simply dummy text</Text>
+      <TopTap />
     </View>
   )
 }
