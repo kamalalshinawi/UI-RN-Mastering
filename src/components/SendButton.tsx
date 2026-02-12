@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import {s,vs} from "react-native-size-matters"
 import React from 'react'
-import { SentIcon } from '../assets/SentIcon'
+import { SentIcon } from '../assets/Icons'
 
 const SendButton = () => {
   return (
