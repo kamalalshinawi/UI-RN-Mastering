@@ -15,7 +15,7 @@ const MediationCard = () => {
     style={styles.imageContainer}
     imageStyle={styles.imgStyle}
     >
-    
+    <View style={styles.overlay}/>
 
     <View  style={styles.CardContent}>
 
@@ -63,5 +63,11 @@ const styles = StyleSheet.create({
     fontSize:s(12),
     fontWeight: "regular",
     marginStart:s(7.7),
+  },
+  overlay:{
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgb(0,0,0,0.15)",
+    
+
   }
 });
