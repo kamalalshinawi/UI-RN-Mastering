@@ -35,8 +35,8 @@ export default MediationCard;
 const styles = StyleSheet.create({
   imageContainer:{
     borderRadius:12,
-    height: vs(161),
-    width: s(165.5),
+    height: vs(140),
+    width: s(150),
     overflow: "hidden",
     marginTop: vs(24),
   },

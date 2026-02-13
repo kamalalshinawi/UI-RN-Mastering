@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View,FlatList } from "react-native";
 import React from "react";
 import { s, vs } from "react-native-size-matters";
 import TopTap from "../components/TopTap";
 import MediationCard from "../components/MediationCard";
+import { dummyData } from "../data/data";
 
 const HomeScreen = () => {
   return (
@@ -11,7 +12,19 @@ const HomeScreen = () => {
       <Text style={styles.loremtext}>Lorem Ipsum is simply dummy text</Text>
       <TopTap />
 
-      <MediationCard />
+      
+      <FlatList 
+      data={dummyData}
+      keyExtractor={item => item.id}
+      renderItem={({item})=> <MediationCard />}
+      showsVerticalScrollIndicator={false}
+      numColumns={2}
+      columnWrapperStyle={
+        {
+          justifyContent:"space-between",
+        }
+      }
+      />
     </View>
   );
 };
