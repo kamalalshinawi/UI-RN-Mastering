@@ -22,6 +22,7 @@ const TopTap = () => {
               ifActive && { backgroundColor: Active_BG },
             ]}
             onPress={() => setactive(tabName)}
+            key={tabName}
           >
             <Text style={ifActive ? styles.ActiveTxt : styles.inActiveTxt}>
               {tabName}
