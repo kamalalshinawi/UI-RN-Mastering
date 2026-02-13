@@ -8,10 +8,10 @@ interface MediaData {
   text: string;
   datTime: string;
 }
-const MediationCard: FC<MediaData> = ({ImageUrl,text,datTime}) => {
+const MediationCard: FC<MediaData> = ({ ImageUrl, text, datTime }) => {
   return (
     <ImageBackground
-      source={{uri:ImageUrl}}
+      source={{ uri: ImageUrl }}
       style={styles.imageContainer}
       imageStyle={styles.imgStyle}
     >

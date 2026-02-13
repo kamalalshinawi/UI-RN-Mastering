@@ -15,14 +15,20 @@ const HomeScreen = () => {
       <FlatList
         data={dummyData}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <MediationCard ImageUrl={item.image} text={item.title} datTime={item.date} />}
+        renderItem={({ item }) => (
+          <MediationCard
+            ImageUrl={item.image}
+            text={item.title}
+            datTime={item.date}
+          />
+        )}
         showsVerticalScrollIndicator={false}
         numColumns={2}
         columnWrapperStyle={{
           justifyContent: "space-between",
         }}
         contentContainerStyle={{
-          paddingBottom:vs(125),
+          paddingBottom: vs(125),
         }}
       />
     </View>
