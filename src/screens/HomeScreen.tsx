@@ -15,7 +15,7 @@ const HomeScreen = () => {
       <FlatList
         data={dummyData}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <MediationCard />}
+        renderItem={({ item }) => <MediationCard ImageUrl={item.image} text={item.title} datTime={item.date} />}
         showsVerticalScrollIndicator={false}
         numColumns={2}
         columnWrapperStyle={{

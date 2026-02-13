@@ -3,22 +3,22 @@ import React, { FC } from "react";
 import { s, vs } from "react-native-size-matters";
 import { IconCard } from "../assets/Icons";
 
-// interface MediaData {
-//   imag: string;
-//   text: string;
-//   date: string;
-// }
-const MediationCard = () => {
+interface MediaData {
+  ImageUrl: string;
+  text: string;
+  datTime: string;
+}
+const MediationCard: FC<MediaData> = ({ImageUrl,text,datTime}) => {
   return (
     <ImageBackground
-      source={require("../assets/james.webp")}
+      source={{uri:ImageUrl}}
       style={styles.imageContainer}
       imageStyle={styles.imgStyle}
     >
       <View style={styles.overlay} />
 
       <View style={styles.CardContent}>
-        <Text style={styles.content}>Meditations</Text>
+        <Text style={styles.content}>{text}</Text>
         <View
           style={{
             flexDirection: "row",
@@ -27,7 +27,7 @@ const MediationCard = () => {
           }}
         >
           <IconCard />
-          <Text style={styles.datetxt}>31st Jan - 09:00 am</Text>
+          <Text style={styles.datetxt}>{datTime}</Text>
         </View>
       </View>
     </ImageBackground>
