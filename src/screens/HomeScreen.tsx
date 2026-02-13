@@ -21,6 +21,9 @@ const HomeScreen = () => {
         columnWrapperStyle={{
           justifyContent: "space-between",
         }}
+        contentContainerStyle={{
+          paddingBottom:vs(125),
+        }}
       />
     </View>
   );
