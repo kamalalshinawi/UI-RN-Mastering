@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import BackButton from "../components/BackButton";
+import PayMethodCard from "../components/PayMethodCard";
 import { s, vs } from "react-native-size-matters";
 
 const PaymentScreen = () => {
@@ -10,6 +11,8 @@ const PaymentScreen = () => {
         <BackButton />
         <Text style={styles.headrcontent}>Payment</Text>
       </View>
+      <PayMethodCard />
+      <PayMethodCard isSelected={true}  />
     </View>
   );
 };
@@ -20,11 +23,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: s(24),
-    marginTop: vs(15),
+    paddingTop: vs(15),
   },
   header: {
     flexDirection: "row",
     alignItems: "center",
+    marginBottom: vs(30),
   },
   headrcontent: {
     marginStart: s(18),
