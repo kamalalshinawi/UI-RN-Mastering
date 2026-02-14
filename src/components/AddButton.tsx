@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { s, vs } from "react-native-size-matters";
 import Entypo from "@expo/vector-icons/Entypo";
 import React from "react";
 
 const AddButton = () => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <Entypo name="plus" size={24} color="#FF7622" />
       <Text
         style={{
@@ -16,7 +16,7 @@ const AddButton = () => {
       >
         Add New
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 

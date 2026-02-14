@@ -4,7 +4,7 @@ import BackButton from "../components/BackButton";
 import PayMethodCard from "../components/PayMethodCard";
 import PaymenyList from "../components/PaymenyList";
 import CardIcon from "../components/CardIcon";
-import AddButton from "../components/AddButton"
+import AddButton from "../components/AddButton";
 import { s, vs } from "react-native-size-matters";
 
 const PaymentScreen = () => {
