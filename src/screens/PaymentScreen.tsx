@@ -3,6 +3,7 @@ import React from "react";
 import BackButton from "../components/BackButton";
 import PayMethodCard from "../components/PayMethodCard";
 import PaymenyList from "../components/PaymenyList"
+import CardIcon from "../components/CardIcon"
 import { s, vs } from "react-native-size-matters";
 
 const PaymentScreen = () => {
@@ -13,6 +14,7 @@ const PaymentScreen = () => {
         <Text style={styles.headrcontent}>Payment</Text>
       </View>
       <PaymenyList />
+      <CardIcon />
     </View>
   );
 };
