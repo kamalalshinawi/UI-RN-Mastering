@@ -1,13 +1,26 @@
 import { StyleSheet, Text, View } from "react-native";
 import { vs, s } from "react-native-size-matters";
 import { CardLogo } from "../assets/Icons";
+import LottieView from 'lottie-react-native';
+
 import React from "react";
 
 const CardIcon = () => {
   return (
     <View style={styles.container}>
       <View style={styles.CardLogo}>
-        <CardLogo />
+        {/* <CardLogo /> */}
+        <LottieView
+        autoPlay
+        
+        style={{
+          width: s(250),
+          height: vs(150),
+          
+        }}
+        // Find more Lottie files at https://lottiefiles.com/featured
+        source={require('../assets/CardAnimation.json')}
+      />
       </View>
       <Text style={styles.contentOne}>No master card added</Text>
       <View style={styles.contText}>
