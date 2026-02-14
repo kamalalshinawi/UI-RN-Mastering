@@ -2,9 +2,15 @@ import { StyleSheet, Text, View } from "react-native";
 import { s, vs } from "react-native-size-matters";
 import { MethodIcon } from "../assets/Icons";
 import Entypo from "@expo/vector-icons/Entypo";
-import React from "react";
+import React, { ReactNode, FC } from "react";
 
-const PayMethodCard = ({ isSelected = false }) => {
+interface PayMetProps {
+    isSelected?: boolean,
+    title:string,
+    icon:ReactNode,
+}
+
+const PayMethodCard: FC<PayMetProps> = ({ isSelected = false , title , icon}) => {
   return (
     <View style={{ width: s(85) }}>
       {isSelected && (
@@ -13,9 +19,9 @@ const PayMethodCard = ({ isSelected = false }) => {
         </View>
       )}
       <View style={[styles.MethodCard, isSelected && styles.selected]}>
-        <MethodIcon />
+        {icon}
       </View>
-      <Text style={styles.TextMethod}>Cash</Text>
+      <Text style={styles.TextMethod}>{title}</Text>
     </View>
   );
 };

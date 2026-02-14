@@ -12,7 +12,7 @@ const PaymentScreen = () => {
         <Text style={styles.headrcontent}>Payment</Text>
       </View>
       <PayMethodCard />
-      <PayMethodCard isSelected={true}  />
+      <PayMethodCard isSelected={true}  title="Fawry" />
     </View>
   );
 };
