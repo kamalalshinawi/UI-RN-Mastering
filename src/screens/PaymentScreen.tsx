@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import BackButton from "../components/BackButton";
 import PayMethodCard from "../components/PayMethodCard";
+import PaymenyList from "../components/PaymenyList"
 import { s, vs } from "react-native-size-matters";
 
 const PaymentScreen = () => {
@@ -11,8 +12,7 @@ const PaymentScreen = () => {
         <BackButton />
         <Text style={styles.headrcontent}>Payment</Text>
       </View>
-      <PayMethodCard />
-      <PayMethodCard isSelected={true}  title="Fawry" />
+      <PaymenyList />
     </View>
   );
 };
@@ -22,13 +22,14 @@ export default PaymentScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: s(24),
+    
     paddingTop: vs(15),
   },
   header: {
     flexDirection: "row",
     alignItems: "center",
     marginBottom: vs(30),
+    paddingHorizontal: s(24),
   },
   headrcontent: {
     marginStart: s(18),
