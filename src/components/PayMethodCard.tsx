@@ -8,6 +8,7 @@ interface PayMetProps {
   isSelected?: boolean;
   title: string;
   icon: ReactNode;
+  onpress: () => void;
 }
 
 const PayMethodCard: FC<PayMetProps> = ({

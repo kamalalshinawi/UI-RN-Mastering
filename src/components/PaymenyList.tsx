@@ -10,10 +10,8 @@ const PayMentData = [
   { title: "ATM", icon: <MethodIcon /> },
 ];
 
-
-
 const PaymenyList = () => {
-    const [preesed, setpressed] = useState("");
+  const [preesed, setpressed] = useState("");
   return (
     <View>
       <FlatList
@@ -29,7 +27,11 @@ const PaymenyList = () => {
         )}
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ gap: s(16), paddingHorizontal: s(16) ,paddingTop:vs(16)}}
+        contentContainerStyle={{
+          gap: s(16),
+          paddingHorizontal: s(16),
+          paddingTop: vs(16),
+        }}
       />
     </View>
   );
