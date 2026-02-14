@@ -1,18 +1,23 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { s, vs } from "react-native-size-matters";
 import { MethodIcon } from "../assets/Icons";
 import Entypo from "@expo/vector-icons/Entypo";
 import React, { ReactNode, FC } from "react";
 
 interface PayMetProps {
-    isSelected?: boolean,
-    title:string,
-    icon:ReactNode,
+  isSelected?: boolean;
+  title: string;
+  icon: ReactNode;
 }
 
-const PayMethodCard: FC<PayMetProps> = ({ isSelected = false , title , icon}) => {
+const PayMethodCard: FC<PayMetProps> = ({
+  isSelected = false,
+  title,
+  icon,
+  onpress,
+}) => {
   return (
-    <View style={{ width: s(85) }}>
+    <TouchableOpacity onPress={onpress} style={{ width: s(85) }}>
       {isSelected && (
         <View style={styles.check}>
           <Entypo name="check" size={12} color="white" />
@@ -22,7 +27,7 @@ const PayMethodCard: FC<PayMetProps> = ({ isSelected = false , title , icon}) =>
         {icon}
       </View>
       <Text style={styles.TextMethod}>{title}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
