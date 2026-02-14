@@ -4,6 +4,7 @@ import IntroScreen from "./src/screens/IntroScreen";
 import SocialContactUser from "./src/screens/SocialContactUser";
 import { SafeAreaView } from "react-native-safe-area-context";
 import HomeScreen from "./src/screens/HomeScreen"
+import PaymentScreen from "./src/screens/PaymentScreen";
 
 export default function App() {
   return (
@@ -11,8 +12,8 @@ export default function App() {
       
         {/* <IntroScreen /> */}
         {/* <SocialContactUser /> */}
-        <HomeScreen />
-      
+        {/* <HomeScreen /> */}
+        <PaymentScreen />
     </SafeAreaView>
   );
 }
