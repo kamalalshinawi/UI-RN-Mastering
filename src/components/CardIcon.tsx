@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#F7F8F9",
     borderRadius: s(10),
-    marginHorizontal: s(16),
+    // marginHorizontal: s(16),
     alignItems: "center",
     justifyContent: "center",
     marginTop: vs(25)
